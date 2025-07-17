@@ -210,14 +210,18 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
   }
+
+.added-to-cart {
+    background-color: grey; /* Grey when product is added */
+    opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+    cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
+    /* pointer-events: none; */
+}
   
   .product-button:hover {
     background-color: #45a049;
   }
   
-  .product-button.added-to-cart {
-    background-color: grey; /* Grey when product is added */
-  }
   @media (max-width: 1200px) {
     .product-card {
       flex: 1 1 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap on medium screens */
